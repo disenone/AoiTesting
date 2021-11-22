@@ -1,0 +1,25 @@
+project aoi_alg
+    : requirements <include>./src/ <threading>multi
+    ;
+
+using gcc
+    :
+    :
+    : <cxxflags>"-std=c++14"
+    ;
+
+BOOST_ROOT = "../../bin/boost_1_75_0" ;
+lib boost_test
+    :
+    : <name>boost_unit_test_framework <search>$(BOOST_ROOT)/lib
+    : usage-requirements <include>$(BOOST_ROOT)/include
+    ;
+
+lib boost_timer
+    :
+    : <name>boost_timer <search>$(BOOST_ROOT)/lib
+    : usage-requirements <include>$(BOOST_ROOT)/include
+    ;
+
+build-project src ;
+build-project test ;

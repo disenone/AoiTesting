@@ -1,0 +1,7 @@
+lib aoi_alg
+  : squares/squares.cpp
+    common/nuid.cpp
+    cross/cross.cpp
+    ..//boost_timer/<link>shared
+  : <cxxflags>"-O2"
+  ;

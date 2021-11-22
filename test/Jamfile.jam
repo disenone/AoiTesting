@@ -1,0 +1,11 @@
+import regex ;
+
+alias aoi_alg : ../src//aoi_alg : <link>shared ;
+
+for local file in [ glob *.cpp ] {
+    local s = [ regex.split $(file) ".cpp" ] ;
+    exe $(s[0])
+        : $(file) aoi_alg ..//boost_test/<link>shared ..//boost_timer/<link>shared
+        : <linkflags>"-Wl,--no-as-needed -lprofiler -Wl,--as-needed -ltcmalloc"
+        ;
+}
