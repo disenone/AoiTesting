@@ -16,7 +16,7 @@ Test aoi square algorithm and aoi cross algorithm.
 * edit `BOOST_ROOT` in file `Jamroot.jam` to the install path of boost.
 * run `b2` at project directory.
 
-## Result 结果
+## Result
 
 分别测了玩家加入场景（`Add Player`），计算 AOI 进出事件（`Tick`），玩家更新坐标位置（`Update Pos`）三种情况的时间消耗。结果放在 test_square.txt 和 test_cross.txt 中。
 
