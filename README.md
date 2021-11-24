@@ -22,6 +22,12 @@ Test aoi square algorithm and aoi cross algorithm.
 
 Three situations are tested: `Add Player`, `Tick` and `Update Pos`. Results are placed in test_square.txt and test_cross.txt.
 
+ ![](https://disenone.github.io/assets/post_assets/2021-11-18-aoi-tesing/add_player.png)
+
+ ![](https://disenone.github.io/assets/post_assets/2021-11-18-aoi-tesing/tick.png)
+
+ ![](https://disenone.github.io/assets/post_assets/2021-11-18-aoi-tesing/update_pos.png)
+
 test_square.txt:
 
 ```python
